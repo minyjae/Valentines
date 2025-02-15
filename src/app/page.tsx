@@ -58,6 +58,7 @@ export default function Home() {
           <button
             onClick={handleClick}
             className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition"
+            disabled={!name.trim()}
           >
             Submit
           </button>
@@ -69,7 +70,7 @@ export default function Home() {
           {greetings2 ? (
             <>
             <p className="text-xl font-semibold text-red-500">{greetings2}</p>
-            <p className="text-xl font-semibold text-red-500">created by jrd.mov_</p>
+            <p className="text-xl font-semibold">created by jrd.mov_</p>
             </>
           ) : (
             // ถ้า greetings2 ไม่มีค่า ให้แสดงข้อความอื่น
