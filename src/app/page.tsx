@@ -67,7 +67,10 @@ export default function Home() {
         <div className="text-base text-center space-y-3 m-4">
           {/* ถ้า greetings2 มีค่า ให้แสดงเฉพาะ greetings2 */}
           {greetings2 ? (
+            <>
             <p className="text-xl font-semibold text-red-500">{greetings2}</p>
+            <p className="text-xl font-semibold text-red-500">created by jrd.mov_</p>
+            </>
           ) : (
             // ถ้า greetings2 ไม่มีค่า ให้แสดงข้อความอื่น
             <>
